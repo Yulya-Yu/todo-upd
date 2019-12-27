@@ -1,7 +1,7 @@
 <template>
   <div class="todo-item">
     <div class="todo-item-left">
-        <p-check class="p-default p-round p-fill completed" color="success" v-model="completed" @change="doneEdit"></p-check>
+        <input type="checkbox" v-model="completed" @change="doneEdit">
         <div v-if="!editing" @dblclick="editTodo" class="todo-item-label" :class="{ completed : completed }">{{ title }}</div>
         <input v-else class="todo-item-edit" type="text" v-model="title" @blur="doneEdit" @keyup.enter="doneEdit" @keyup.esc="cancelEdit" v-focus>
     </div> <!-- end todo-item-left -->

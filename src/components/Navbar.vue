@@ -6,8 +6,8 @@
           <ul class="nav-links">
             <li v-if="isLoggedIn"><span class="email">{{currentUser}}</span></li>
             <li v-if="isLoggedIn" class="dashboard"><router-link to="/MainComponent">Dashboard</router-link></li>
-            <li v-if="!isLoggedIn"><router-link to="/login">Login</router-link></li>
-            <li v-if="!isLoggedIn"><router-link to="/register">Register</router-link></li>
+            <li v-if="!isLoggedIn"><router-link to="/login">войти</router-link></li>
+            <li v-if="!isLoggedIn"><router-link to="/register">регистрация</router-link></li>
             <li v-if="isLoggedIn"><button v-on:click="logout" class="btn-logout">выйти</button></li>
           </ul>
         </div>

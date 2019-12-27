@@ -16,7 +16,7 @@
               <input type="password" id="password" v-model="password" placeholder="Password">
               <label class="white-text" for="password"></label>
             </div>
-            <button v-on:click="login" class="btn btn-large btn-extended grey lighten-4 black-text">Login</button>
+            <button v-on:click="login" class="btn btn-large btn-extended grey lighten-4 black-text">Войти</button>
           </form>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(
           () => {
-            alert(`You are logged in as ${this.email}`);
+            alert(`Вы вошли как ${this.email}`);
             this.$router.push('/');
           },
           err => {

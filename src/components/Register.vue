@@ -16,7 +16,7 @@
               <input type="password" id="password" v-model="password" placeholder="Password">
               <label for="password"></label>
             </div>
-            <button v-on:click="register" class="btn btn-large btn-extended grey lighten-4 black-text">Register</button>
+            <button v-on:click="register" class="btn btn-large btn-extended grey lighten-4 black-text">Зарегистрироваться</button>
           </form>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default {
         .then(
           () => {
             // console.log(user);
-            alert(`Account Created for ${this.email}`);
+            alert(`Аккаунт создан для ${this.email}`);
             this.$router.push('/');
           },
           err => {

@@ -2,8 +2,8 @@
      <div class="page">
 
 <input type="text" v-model="todoList" class="todo-list" name="todoList" placeholder="введите название списка" />
-    <input type="text" class="todo-input" name="todoItems" placeholder="добавить дело" v-model="newTodo" @keyup.enter="addTodo">
-    <div v-if="$store.state.loading" class="lds-ring">
+    <input type="text" class="todo-input" placeholder="добавить дело" v-model="newTodo" @keyup.enter="addTodo">
+    <div v-if="$store.state.loading">
       <div></div><div></div><div></div><div></div>
     </div>
 
